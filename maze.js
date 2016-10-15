@@ -1,8 +1,14 @@
-
 window.onload = function(){
-    document.getElementById("boundary1").addEventListener("mouseover",borderHover);
+    var borders = document.querySelectorAll(".boundary");
+    for (i = 0; i < borders.length;i++){
+        borders[i].addEventListener("mouseover",allborders);
+    }
 }
 
-function borderHover(){
-    document.getElementById("boundary1").className = " boundary youlose";
+
+function allborders(){
+    var borders = document.querySelectorAll(".boundary");
+    for (var  i = 0; i < borders.length; i++){
+        borders[i].className= "boundary youlose";
+    }
 }

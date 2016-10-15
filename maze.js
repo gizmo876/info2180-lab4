@@ -27,9 +27,9 @@ function end(){
    var hitE=true;
     if(hitE)
     {
-    alert("You Win!");
+    alert("You Win!".innerHTML);
     } else
     {
-        alert("You Lost! Try Again...");
+        alert("You Lost! Try Again...".innerHTML);
     }
 }

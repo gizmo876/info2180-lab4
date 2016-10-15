@@ -12,6 +12,7 @@ function allborders(){
     for (var  i = 0; i < borders.length; i++){
         borders[i].className= "boundary youlose";
     }
+    document.getElementById("start").addEventListener("click", reset);
 }
     
 function start(){
